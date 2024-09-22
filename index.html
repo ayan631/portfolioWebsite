@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Ayan Bhattacherjee</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/19b26482d8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Java Developer</p>
+                <h1>Hello, I'm <span>Ayan</span><br> Bhattacherjee From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------  about  -------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/dev3.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repudiandae nisi eligendi fugit, deleniti repellat reprehenderit exercitationem, aspernatur dolor libero eaque quisquam nulla. Totam, laudantium quaerat! Velit officiis, consectetur eaque commodi, reiciendis provident cumque ratione, eligendi assumenda voluptatum aut labore repudiandae saepe laborum corporis est.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Spring Boot</span><br>Designing back-end of Web/App</li>
+                            <li><span>Java</span><br>Java based back-end Development</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>MySQL</span><br>Designing Relational Database for apps</li>
+                            <li><span>Data Structure</span><br>Problem Solving and Applying Algorithms</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Designing Back-end of web/app using Spring boot framework</li>
+                            <li><span>2022 - Current</span><br>Using MySQL for relational database designing</li>
+                            <li><span>2021 - 2022</span><br>Programmer Trainee at Cognizant</li>
+                            <li><span>2020 - Current</span><br>Java Programming Language as primary programming language</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>M.C.A from IEM Kolkata.</li>
+                            <li><span>2021</span><br>B.C.A from BIMS Burdwan.</li>
+                            <li><span>2017</span><br>Diploma in Hospitality from Frankfinn Durgapur.</li>
+                            <li><span>2016</span><br>Hgher Secondary from BMHS, Burdwan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- -----------------------Services--------------------------- -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Back-end Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, consectetur quidem fugit eum molestiae nobis voluptas quae modi blanditiis laudantium?</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Designing</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, consectetur quidem fugit eum molestiae nobis voluptas quae modi blanditiis laudantium?</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, consectetur quidem fugit eum molestiae nobis voluptas quae modi blanditiis laudantium?</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+
+<!-- ------------------------- Portfolio ---------------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Blog App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat est quod molestias tempora quasi iure? Minima debitis repudiandae nostrum ea aliquam doloremque.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Product Management App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus veniam temporibus totam quas odit consequuntur adipisci vitae ipsam alias? Itaque.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/coding-4.png">
+                <div class="layer">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, praesentium amet sunt necessitatibus dolores sint maiores nemo sit maxime. Porro excepturi tenetur sequi quo voluptatibus?</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- -----------------------Contact------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> bhattacherjeeayan60@gmail.com</p>
+                <p><i class="fa-regular fa-paper-plane"></i> bhattacherjeeayan24@gmail.com</p>
+                <p> <i class="fa-solid fa-mobile-screen-button"></i> +91 9564130631</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/the.mysterious.Ayan?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/bhattacherjee_ayan24?igsh=NGIxYmN2cnJjYTNm"><i class="fa-brands fa-square-instagram"></i></i></a>
+                    <a href="https://www.linkedin.com/in/ayan-bhattacherjee-61554b166"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/ayan631"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://wa.me/919564130631"><i class="fa-brands fa-square-whatsapp"></i></a>
+                </div>
+                <a href="images/Ayan's_new_resume.pdf" download class="btn btn-2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" id="name" placeholder="Enter name here" required>
+                    <input type="email" name="Email" id="email" placeholder="Enter email here" required>
+                    <input type="text" name="Phone" id="phone" placeholder="Enter phone number here" required>
+                    <textarea name="Message" id="message" rows="6" placeholder="Write your message"></textarea>
+                    <button type="submit" class="btn btn-2">Submit</button>
+                    <button type="reset" class="btn btn-2">Reset</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p> Copyright &#169 Ayan. Code with <i class="fa-solid fa-brain"></i> and <i class="fa-solid fa-heart-pulse"></i> to shine</p>
+    </div>
+
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+    //for side menu customization//
+    let sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+
+<!-- For submitting form details into google sheet -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzMrIO3ucm8t6cvvBMXO9aBuG4dZJk9f2q8_6iNHUDzLZCMQO-CQqzrtWajMpnxZKQtzw/exec'
+    
+    const form = document.forms['submit-to-google-sheet']
+  
+    const msg = document.getElementById("msg")
+    
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message has been sent successfully !!";
+            setTimeout(function(){
+                msg.innerHTML="";
+            }, 5000)
+            form.reset();
+        })
+        .catch(error => console.error('Oops! Something Went wrong...', error.message))
+    })
+  </script>
+
+</body>
+</html>
