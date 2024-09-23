@@ -8,13 +8,21 @@
     font-family: "Playpen Sans", cursive;
     font-weight: 400;
 }
+
+:root{
+    --secondary-color: #fff;
+    --primary-color: #080808;
+}
+
 html{
     scroll-behavior: smooth;
 }
 
 body{
-    background: #080808;
-    color: #fff;
+    /* background: #080808; */
+    /* color: #fff; */
+    background: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 #header{
@@ -48,7 +56,8 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #fff;
+    /* color: #fff; */
+    color: var(--secondary-color);
     text-decoration: none;
     font-size: 20px;
     font-weight: 200;
@@ -89,7 +98,7 @@ nav ul li a:hover::after{
 
 #about{
     padding: 80px 0;
-    color: #ababab;
+    color: #ababab; /*with dark theme*/
 }
 .row{
     display: flex;
@@ -111,11 +120,12 @@ nav ul li a:hover::after{
     font-size: 40px;
     font-family: "Playpen Sans", cursive;
     font-weight: 400;
-    color: white;
+    /* color: white; */
+    color: var(--secondary-color);
 }
 .about-content{
     font-family: "Source Code Pro", monospace;
-    color: #ababab;
+    color: #ababab; /*with dark theme*/
 }
 .tab-titles{
     display: flex;
@@ -143,9 +153,9 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li{
     list-style: none;
-    margin: 10px 0;
+    margin: 20px 0;
     font-size: 14px;
-
+    text-align: center;
 }
 .tab-contents ul li span{
     color: #b54769;
@@ -192,7 +202,8 @@ nav ul li a:hover::after{
 }
 .services-list div a{
     text-decoration: none;
-    color: white;
+    /* color: white; */
+    color: var(--secondary-color);
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
@@ -200,7 +211,8 @@ nav ul li a:hover::after{
 .services-list div:hover{
     background: #f80441;
     h2{
-        color: white;
+        /* color: white; */
+        color: var(--secondary-color);
     }
     transform: translateY(-10px);
 }
@@ -258,7 +270,8 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 20px;
     line-height: 60px;
-    background: #fff;
+    /* background: #fff; */
+    background: var(--secondary-color);
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -279,12 +292,14 @@ nav ul li a:hover::after{
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #fff;
+    /* color: #fff; */
+    color: var(--secondary-color);
     transition:  background 0.5s;
 }
 .btn:hover{
     background: #f80441;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
+    border: var(--secondary-color);
 }
 
 
@@ -311,7 +326,7 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #ababab;
+    color: #ababab; /*with dark theme*/
     display: inline-block;
     transition: transform 0.3s;
 }
@@ -335,7 +350,8 @@ form input, form textarea{
     background: #262626;
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
+    /* color: #fff; */
+    color: var(--secondary-color);
     font-size: 16px;
     border-radius: 5px;
 }
@@ -370,6 +386,108 @@ form .btn-2{
     display: block;
     font-size: 18px;
 }
+
+
+
+/* ---------------------------Progress Bar-------------------------------*/
+#skills ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 14px;
+}
+
+.skill{
+    width: 160px;
+    height: 160px;
+    position: relative;
+    /* background: cornflowerblue; */
+}
+
+.outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    /* border: 1px solid indianred; */
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    padding: 20px;
+}
+
+.inner{
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* border: 1px solid indianred; */
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);           
+}
+
+#number{
+    font-weight: 600;
+    color: #555;
+}
+
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+}
+.circle-1{
+    animation: anim1 2s linear forwards;
+}
+.circle-2{
+    animation: anim2 2s linear forwards;
+}
+.circle-3{
+    animation: anim3 2s linear forwards;
+}
+.circle-4{
+    animation: anim4 2s linear forwards;
+}
+.circle-5{
+    animation: anim5 2s linear forwards;
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes anim1{
+    100%{
+        stroke-dashoffset: 118;
+    }
+}
+@keyframes anim2{
+    100%{
+        stroke-dashoffset: 165;
+    }
+}
+@keyframes anim3{
+    100%{
+        stroke-dashoffset: 118;
+    }
+}
+@keyframes anim4{
+    100%{
+        stroke-dashoffset: 165;
+    }
+}
+@keyframes anim5{
+    100%{
+        stroke-dashoffset: 110;
+    }
+}
+
 
 
 /* ------------------------------ For smaller devices ----------------------------------- */
