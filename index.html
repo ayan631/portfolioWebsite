@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website - Ayan Bhattacherjee</title>
     <link rel="stylesheet" href="style.css">
-
     <script src="https://kit.fontawesome.com/19b26482d8.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div id="header">
@@ -48,12 +48,112 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
+                            <li>
+                                <div class="skill">
+                                    <div class="outer">
+                                        <div class="inner">
+                                            <div id="number">Java</div>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                           <linearGradient id="GradientColor">
+                                              <stop offset="0%" stop-color="#673ab7" />
+                                              <stop offset="100%" stop-color="#f80441" />
+                                           </linearGradient>
+                                        </defs>
+                                        <circle class ="circle-1" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill">
+                                    <div class="outer">
+                                        <div class="inner">
+                                            <div id="number2">Spring</div>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                           <linearGradient id="GradientColor">
+                                              <stop offset="0%" stop-color="#673ab7" />
+                                              <stop offset="100%" stop-color="#f80441" />
+                                           </linearGradient>
+                                        </defs>
+                                        <circle class ="circle-2" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill">
+                                    <div class="outer">
+                                        <div class="inner">
+                                            <div id="number3">Spring boot</div>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                           <linearGradient id="GradientColor">
+                                              <stop offset="0%" stop-color="#673ab7" />
+                                              <stop offset="100%" stop-color="#f80441" />
+                                           </linearGradient>
+                                        </defs>
+                                        <circle class ="circle-3" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill">
+                                    <div class="outer">
+                                        <div class="inner">
+                                            <div id="number4">Data Structures</div>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                           <linearGradient id="GradientColor">
+                                              <stop offset="0%" stop-color="#673ab7" />
+                                              <stop offset="100%" stop-color="#f80441" />
+                                           </linearGradient>
+                                        </defs>
+                                        <circle class ="circle-4" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill">
+                                    <div class="outer">
+                                        <div class="inner">
+                                            <div id="number5">My SQL</div>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                           <linearGradient id="GradientColor">
+                                              <stop offset="0%" stop-color="#673ab7" />
+                                              <stop offset="100%" stop-color="#f80441" />
+                                           </linearGradient>
+                                        </defs>
+                                        <circle class ="circle-5" cx="80" cy="80" r="70" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- <ul>
                             <li><span>Spring Boot</span><br>Designing back-end of Web/App</li>
                             <li><span>Java</span><br>Java based back-end Development</li>
                             <li><span>Web Development</span><br>Web app Development</li>
                             <li><span>MySQL</span><br>Designing Relational Database for apps</li>
                             <li><span>Data Structure</span><br>Problem Solving and Applying Algorithms</li>
-                        </ul>
+                        </ul> -->
                     </div>
 
                     <div class="tab-contents" id="experience">
@@ -229,6 +329,21 @@
         .catch(error => console.error('Oops! Something Went wrong...', error.message))
     })
   </script>
+
+<!--  ---------------------------------Progress Bar---------------------------------  -->
+<script>
+    let number1 = document.getElementById("number1");
+    let counter1 = 0;
+    setInterval(()=>{
+        if(counter1 == 95){
+            clearInterval();
+        }else{
+            counter1 += 1;
+            number1.innerHTML = counter1 + "%";
+        }
+        number1.style.strokeDashoffset = 195
+    }, 30);
+</script>
 
 </body>
 </html>
